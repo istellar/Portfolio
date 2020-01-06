@@ -92,7 +92,7 @@
         width: 50%;
         justify-content: center;
         letter-spacing: 0.3em;
-        border: 1px solid #000;
+       /* border: 1px solid #000; */
         position: relative;
         padding-right: 30px;
         padding-bottom: 10%;
@@ -102,7 +102,7 @@
     }
     
     .social {
-        border: 1px solid #000;
+        /*border: 1px solid #000; */
         margin-left: auto;
         margin-right: auto;
         margin-top: 5%;

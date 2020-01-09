@@ -1,0 +1,329 @@
+/*  General Styling
+/*-----------------------------------------------------------------------------------*/
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    /* text-align: center;*/
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    margin: auto;
+    width: auto;
+    box-sizing: border-box;
+    background-color: #0C3574;
+    color: #fff;
+    background: url("../images/Portfolio.svg") repeat scroll center center / cover;
+    height: 100%;
+    padding-bottom: 20%;
+}
+
+a,
+a:link {
+    text-decoration: none;
+    color: #0C3574 !important;
+    font-size: 2vh;
+}
+
+a:hover {
+    font-size: 150%;
+}
+
+ ::-moz-selection {
+    background: #cf0649;
+    color: #fff;
+}
+
+ ::selection {
+    background: #cf0649;
+    color: #fff;
+}
+
+.padDiv {
+    padding: 30px 20px;
+}
+
+.section-title {
+    margin-bottom: 3%;
+}
+
+.section-title h2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /* border: 1px solid #fff; */
+}
+
+.paddsection {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.paddsections {
+    padding-top: 90px;
+    padding-bottom: 90px !important;
+}
+
+.responsive {
+    display: none;
+    font-size: 23px;
+}
+
+.active {
+    color: #cf0649;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  Navbar Top
+/*-----------------------------------------------------------------------------------*/
+
+.dropdown {
+    border: 1px solid #fff;
+    height: auto;
+    width: auto;
+    color: #FFFEFB;
+    margin-left: 90%;
+    text-align: center;
+    padding-top: .75%;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    align-items: center;
+    /*prevents menu content from shifting portfolio down when menu is open*/
+    background-color: rgb(243, 243, 245);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 120px;
+    height: 150px;
+    z-index: 1;
+    text-align: center;
+    /*justify-content: center; */
+    /*  border: 2px solid #000; */
+    /*border around dropdown box*/
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none !important;
+    display: block !important;
+    font-size: 15px;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #cf064921;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    position: absolute;
+    display: block !important;
+    width: 100%;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  Portfolio
+/*-----------------------------------------------------------------------------------*/
+
+#portfolio {
+    position: center;
+    /* border: solid #fff 2px; */
+    padding-top: 0;
+    margin: 0 0 0 0;
+}
+
+#portfolio h2 {
+    color: #FFFEFB;
+    /*border: solid #fff 2px; */
+    text-align: center;
+}
+
+#portfolio .portfolio-list {
+    margin-bottom: 5%;
+    /*border: solid #fff 2px;*/
+}
+
+#portfolio .portfolio-list .nav {
+    /* display: inline-block; */
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: solid #fff 2px; */
+}
+
+#portfolio .portfolio-list .nav li {
+    margin: 0% 2% 0 0;
+    /*float: left; */
+    font-size: 2.25vh;
+    color: #FFFEFB;
+    line-height: 2vh;
+    cursor: pointer;
+    font-family: 'Poppins', helvetica;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#portfolio .portfolio-list .nav li:hover,
+#portfolio .portfolio-list .nav li.filter-active {
+    color: #cf0649;
+    font-weight: 400;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#portfolio .portfolio-container {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+    /* border: 2px solid #fff; */
+}
+
+.portfolio-thumbnail {
+    margin-bottom: 50px;
+    min-height: 300px;
+}
+
+.portfolio-thumbnail img {
+    max-width: 100%;
+}
+
+
+/*
+    .portfolio-thumbnail figure {
+        background: #FFFEFB;
+        opacity: .9;
+    }
+    */
+
+.portfolio-thumbnail figure {
+    background: #FFFEFB;
+    opacity: .9;
+}
+
+.portfolio-thumbnail figcaption {
+    font-size: 11px;
+    padding: 0 5 10 5;
+}
+
+
+/*.portfolio-thumbnail figcaption:hover h4,
+    h5 {
+        visibility: visible;
+        border: 1px solid #000;
+    } */
+
+
+/*
+    .figcaption span:hover {
+        display: block;
+        padding: 12px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #cf0649;
+    } */
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  Footer
+/*-----------------------------------------------------------------------------------*/
+
+.wrapper {
+    background: #FFFEFB;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer {
+    font-size: 15px;
+    letter-spacing: 0.15em;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #0C3574;
+    margin-left: auto;
+    margin-right: 20px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.footer p {
+    padding-top: 8px;
+}
+
+
+/*
+pre>code {
+    white-space: pre;
+    word-wrap: initial;
+    word-break: initial;
+} */

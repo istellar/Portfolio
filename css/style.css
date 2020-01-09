@@ -54,7 +54,6 @@
     
     .container {
         width: 66%;
-        height: 75%;
         max-width: 50%;
         max-height: 75%;
         min-width: 300px;
@@ -76,9 +75,10 @@
         width: 3vw;
         color: #0C3574;
         margin-left: 90%;
-        position: center;
+        position: relative;
         /* border: 1px solid #0C3574;*/
         padding-top: .25%;
+        padding-right: .5%;
         margin-top: 2%;
         margin-right: 2%;
     }

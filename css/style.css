@@ -127,7 +127,6 @@
 ***************************************************************/
     
     .headshot {
-        position: relative;
         width: auto;
         height: auto;
         /* border: 1px solid #000; */
@@ -135,7 +134,6 @@
         margin: auto;
         max-width: 100%;
         max-height: 100%;
-        padding: 1%;
     }
     
     .container h1 {
@@ -149,7 +147,7 @@
     }*/
     
     .info-pane {
-        padding-left: 28%;
+        /*padding-left: 28%;*/
         letter-spacing: 0.3em;
         padding-top: 0%;
         /* border: 1px solid #000;*/

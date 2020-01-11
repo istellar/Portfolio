@@ -1,0 +1,192 @@
+    /*  General Styling
+/*-----------------------------------------------------------------------------------*/
+    
+    @-ms-viewport {
+        width: device-width;
+    }
+    
+    @-o-viewport {
+        width: device-width;
+    }
+    
+    @viewport {
+        width: device-width;
+    }
+    
+    html {
+        height: 100%;
+        min-height: 100%;
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'Poppins', helvetica;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        margin: auto;
+        width: auto;
+        min-height: 100%;
+        box-sizing: border-box;
+        background-color: #0C3574;
+        color: #fff;
+        background: url("../images/Background.svg") repeat scroll center center / cover;
+        height: 100%;
+    }
+    
+    a,
+    a:link {
+        text-decoration: none;
+        color: #cf0649;
+        font-size: 3vh;
+    }
+    
+    a:hover {
+        font-size: 150%;
+    }
+    /*----------------------------------------------------------------------------------*/
+    /*  Header
+/*-----------------------------------------------------------------------------------*/
+    
+    .container {
+        flex-direction: row;
+        width: 50vw;
+        height: 72vh;
+        /* max-height: 75vh;
+        max-width: 50%;
+        min-width: 300px; */
+        border: 2px solid #FFFEFF;
+        background-color: #FFFEFF;
+        color: #0C3574;
+        /*justify-content: center;*/
+        margin: 0 auto auto auto;
+        padding: 1% 1% 1% 1%;
+        /*border: solid 3px rgb(180, 6, 157);*/
+    }
+    /*-----------------------------------------------------------------------------------*/
+    /*  Menu
+/*-----------------------------------------------------------------------------------*/
+    
+    .row {
+        position: relative;
+        /*border: 2px solid #cf0649;*/
+        padding: 1%;
+    }
+    /* .button {
+        border: 2px solid #000;
+    }*/
+    
+    .dropdown {
+        display: flex;
+        flex-flow: row wrap;
+        height: auto;
+        width: auto;
+        color: #0C3574;
+        position: relative;
+        /*border: 1px solid rgb(202, 152, 15);*/
+    }
+    /* Dropdown Content (Hidden by Default) */
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        /*prevents menu content from shifting portfolio down when menu is open*/
+        background-color: rgb(243, 243, 245);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        min-width: 120px;
+        z-index: 1;
+        text-align: center;
+    }
+    /* Links inside the dropdown */
+    
+    .dropdown-content a {
+        position: relative;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+        color: #0C3574 !important;
+    }
+    /* Change color of dropdown links on hover */
+    
+    .dropdown-content a:hover {
+        background-color: #cf064921;
+    }
+    /* Show the dropdown menu on hover */
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+        align-items: stretch;
+    }
+    /* **************************************************************
+/* container content
+***************************************************************/
+    
+    .headshot {
+        position: relative;
+        width: auto;
+        height: auto;
+        /* border: 1px solid #000; */
+        border-radius: 50%;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 1%;
+    }
+    
+    .container h1 {
+        /*border: 1px solid #000;*/
+        font-size: 4vh;
+        font-weight: 600;
+        padding: 0;
+    }
+    /* .info {
+        padding-right: 4%;
+    }*/
+    
+    .info-pane {
+        padding-left: 28%;
+        letter-spacing: 0.3em;
+        padding-top: 0%;
+        /* border: 1px solid #000;*/
+    }
+    
+    .social {
+        /*  border: 1px solid #000; */
+        letter-spacing: 1.5em;
+        justify-content: center;
+    }
+    /*-----------------------------------------------------------------------------------*/
+    /*  Footer
+/*-----------------------------------------------------------------------------------*/
+    
+    .wrapper {
+        background: #FFFEFB;
+        padding-bottom: 10px;
+        width: 100%;
+        height: 5rem;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .footer p {
+        font-size: 100px;
+        letter-spacing: 0.15em;
+        font-weight: 300px;
+        text-transform: uppercase;
+        color: #0C3574 !important;
+        border: 1px solid #cf0649;
+        align-content: center;
+        text-align: center;
+    }
+    /*
+    pre>code {
+        white-space: pre;
+        word-wrap: initial;
+        word-break: initial;
+    } */

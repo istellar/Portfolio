@@ -49,16 +49,16 @@ $(document).ready(function() {
     // ========================================================================= //
     //  //NAVBAR SHOW - HIDE
     // ========================================================================= //
-    $(function() {
-            if ($('.dropdown').slideDown() {
-                    $('.dropdown').addClass('dropdown-content');
-                });
-        } else {
-            $(".dropdown").slideUp('dropdown-content');
-        }
-    });
+   // $(function() {
+     //       if ($('.dropdown').slideDown() {
+       //             $('.dropdown').addClass('dropdown-content');
+        //        });
+       // } else {
+       //     $(".dropdown").slideUp('dropdown-content');
+       // }
+   // });
 
-$('.dropdown-toggle').dropdown('update')
+// $('.dropdown-toggle').dropdown('update')
 
 // ========================================================================= //
 //  // RESPONSIVE MENU

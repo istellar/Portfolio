@@ -213,11 +213,18 @@ textarea {
     }
 }
 
-
 /* Larger than phablet */
 
 @media (min-width: 550px) {}
 
+@media screen and (max-width: 600px) {
+    .container-tools {
+        visability: hidden;
+        clear: both;
+        float: left;
+        display: none;
+    }
+}
 
 /* Larger than tablet */
 

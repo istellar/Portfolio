@@ -177,6 +177,7 @@ textarea {
     text-align: start;
     text-shadow: .5px #fff;
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 }
 
 
@@ -258,3 +259,4 @@ textarea {
         font-size: 4rem;
     }
 }
+

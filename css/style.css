@@ -167,6 +167,8 @@ textarea {
     inset-inline-end: 10px;
     width: 90vw;
     direction: ltr;
+    position: -webkit-sticky;
+
 }
 
 .container-tools p {
@@ -178,6 +180,7 @@ textarea {
     text-shadow: .5px #fff;
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
+    bottom: 0;
 }
 
 
@@ -259,4 +262,5 @@ textarea {
         font-size: 4rem;
     }
 }
+
 

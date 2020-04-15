@@ -1,5 +1,5 @@
 BODY {
-    background-color: #123c69;
+    background-color: #fafafa;
     -webkit-font-smoothing: antialiased;
     font-family: 'Varela Round', sans-serif;
     height: 100%;
@@ -15,7 +15,7 @@ canvas {
 }
 
 a {
-    color: #bbbbc4;
+    color: #01886f;
     text-decoration: none;
     -o-transition: .5s;
     -ms-transition: .5s;
@@ -25,30 +25,33 @@ a {
 }
 
 a:hover {
-    color: #fc3565;
+    color: #136b5c;
 }
 
 h1 {
-    color: #fc3565;
+    color: #000000;
     padding-bottom: 0px;
     margin-bottom: 1%;
+    font-family: 'DM Serif Display', serif;
 }
 
 h2 {
-    color: white;
+    color: #01886f;
     font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     margin: 0px;
     padding: 0px;
 }
 
 p {
-    color: #bbbbc4;
+    color: #191919;
     font-size: 1.7rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 label {
-    color: #ffffff;
+    color: #000000;
     display: block;
     font-size: 0.8em;
     font-weight: 600;
@@ -66,17 +69,17 @@ textarea {
 }
 
 .logo a {
-    color: #FFF;
+    color: #01886f;
 }
 
 .logo {
     font-family: 'Monoton', cursive;
-    color: white;
+    color: #a5267b;
     font-size: 8rem;
 }
 
 .row.top p {
-    color: #bbbbc4;
+    color: #191919;
     margin-top: 1rem;
     text-align: justify;
     font-size: 1.7rem;
@@ -94,27 +97,28 @@ textarea {
     margin-left: 0;
     padding-right: 2.5rem;
     font-size: 2.4rem;
-    color: #fff;
+    color: #01886f;
     z-index: 9999;
 }
 
 .social a:hover {
-    color: #f9007d;
+    color: #a5267b;
     font-size: 2.9rem;
 }
 
 .smallLogo {
+    color: #01886f;
     font-size: 3.5rem;
 }
 
 .services h2 {
-    color: #fc3565;
+    color: #a5267b;
     padding-bottom: 1.5rem;
     font-size: 2rem;
 }
 
 .services .title {
-    color: #DEDEDE;
+    color: #191919;
     font-size: 3rem;
 }
 
@@ -128,20 +132,22 @@ textarea {
 }
 
 .cta p {
-    color: white;
+    color: #191919;
     font-size: 2rem;
     display: inline-block;
     margin: 1.5rem;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .footer {}
 
 .footer p {
-    color: white;
+    color: #191919;
     font-size: 1rem;
     margin: 0px;
     padding: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .footerLinks {
@@ -151,7 +157,7 @@ textarea {
 
 .footerLinks li {
     display: inline-block;
-    color: white;
+    color: #191919;
     margin: 10px;
 }
 
@@ -168,16 +174,15 @@ textarea {
     width: 90vw;
     direction: ltr;
     position: -webkit-sticky;
-
 }
 
 .container-tools p {
-    color: rgb(163, 163, 163);
+    color: #191919;
     font-size: 1rem;
     margin-bottom: 10px;
     padding: 0px;
     text-align: start;
-    text-shadow: .5px #fff;
+    text-shadow: .5px #000;
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     bottom: 0;
@@ -195,7 +200,7 @@ textarea {
         z-index: -9000;
     }
     .container-tools a {
-       /* color: rgba(0, 0, 0, 0);*/
+        /* color: rgba(0, 0, 0, 0);*/
         z-index: -9000;
     }
 }
@@ -217,6 +222,7 @@ textarea {
     }
 }
 
+
 /* Larger than phablet */
 
 @media (min-width: 550px) {}
@@ -229,6 +235,7 @@ textarea {
         display: none;
     }
 }
+
 
 /* Larger than tablet */
 
@@ -262,5 +269,3 @@ textarea {
         font-size: 4rem;
     }
 }
-
-

@@ -1,7 +1,7 @@
 BODY {
-    background-color: #fafafa;
+    background-color: #F8F8F8;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     height: 100%;
     margin: 0px;
     background-size: cover;
@@ -32,13 +32,13 @@ h1 {
     color: #000000;
     padding-bottom: 0px;
     margin-bottom: 1%;
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 h2 {
-    color: #01886f;
+    color: #F76C6C;
     font-size: 3rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     margin: 0px;
     padding: 0px;
@@ -46,8 +46,8 @@ h2 {
 
 p {
     color: #191919;
-    font-size: 1.7rem;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 label {
@@ -55,7 +55,7 @@ label {
     display: block;
     font-size: 0.8em;
     font-weight: 600;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.15em;
     margin: 0 0 1em 0;
     text-transform: uppercase;
 }
@@ -65,17 +65,21 @@ textarea {
     font-size: 17pt;
     font-weight: 300;
     letter-spacing: 0.025em;
-    line-height: 1.65;
+    line-height: 1;
+}
+
+span {
+	color: #F76C6C;
 }
 
 .logo a {
-    color: #01886f;
+    /*color: #F76C6C;*/
 }
 
 .logo {
-    font-family: 'Monoton', cursive;
-    color: #a5267b;
-    font-size: 8rem;
+    /*color: #F76C6C;*/
+	padding: 0;
+	margin: 0;
 }
 
 .row.top p {
@@ -97,23 +101,25 @@ textarea {
     margin-left: 0;
     padding-right: 2.5rem;
     font-size: 2.4rem;
-    color: #01886f;
+    color: #F76C6C;
     z-index: 9999;
 }
 
 .social a:hover {
-    color: #a5267b;
+    color: #F3D250;
     font-size: 2.9rem;
 }
 
 .smallLogo {
-    color: #01886f;
+    /*color: #F76C6C;*/
     font-size: 3.5rem;
+	padding: 0;
+	margin: 0;
 }
 
 .services h2 {
-    color: #a5267b;
-    padding-bottom: 1.5rem;
+    color: #F76C6C;
+    /*padding-bottom: 1.5rem;*/
     font-size: 2rem;
 }
 
@@ -135,9 +141,9 @@ textarea {
     color: #191919;
     font-size: 2rem;
     display: inline-block;
-    margin: 1.5rem;
+    /*margin: 1.5rem;*/
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .footer {}
@@ -147,7 +153,7 @@ textarea {
     font-size: 1rem;
     margin: 0px;
     padding: 0px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .footerLinks {
@@ -179,7 +185,7 @@ textarea {
 .container-tools p {
     color: #191919;
     font-size: 1rem;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
     padding: 0px;
     text-align: start;
     text-shadow: .5px #000;

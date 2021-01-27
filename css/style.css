@@ -1,0 +1,277 @@
+BODY {
+    background-color: #F8F8F8;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100%;
+    margin: 0px;
+    background-size: cover;
+}
+
+canvas {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    vertical-align: bottom;
+}
+
+a {
+    color: #01886f;
+    text-decoration: none;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+a:hover {
+    color: #136b5c;
+}
+
+h1 {
+    color: #000000;
+    padding-bottom: 0px;
+    margin-bottom: 1%;
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    color: #F76C6C;
+    font-size: 3rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    color: #191919;
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+label {
+    color: #000000;
+    display: block;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+}
+
+input,
+textarea {
+    font-size: 17pt;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 1;
+}
+
+span {
+	color: #F76C6C;
+}
+
+.logo a {
+    /*color: #F76C6C;*/
+}
+
+.logo {
+    /*color: #F76C6C;*/
+	padding: 0;
+	margin: 0;
+}
+
+.row.top p {
+    color: #191919;
+    margin-top: 1rem;
+    text-align: justify;
+    font-size: 1.7rem;
+}
+
+.contact {
+    display: inline-block;
+}
+
+.social {}
+
+.social a {
+    position: relative;
+    text-align: justify;
+    margin-left: 0;
+    padding-right: 2.5rem;
+    font-size: 2.4rem;
+    color: #F76C6C;
+    z-index: 9999;
+}
+
+.social a:hover {
+    color: #F3D250;
+    font-size: 2.9rem;
+}
+
+.smallLogo {
+    /*color: #F76C6C;*/
+    font-size: 3.5rem;
+	padding: 0;
+	margin: 0;
+}
+
+.services h2 {
+    color: #F76C6C;
+    /*padding-bottom: 1.5rem;*/
+    font-size: 2rem;
+}
+
+.services .title {
+    color: #191919;
+    font-size: 3rem;
+}
+
+.u-full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta p {
+    color: #191919;
+    font-size: 2rem;
+    display: inline-block;
+    /*margin: 1.5rem;*/
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer {}
+
+.footer p {
+    color: #191919;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footerLinks {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footerLinks li {
+    display: inline-block;
+    color: #191919;
+    margin: 10px;
+}
+
+
+/* --- copyright --- */
+
+.container-tools {
+    padding-top: 3.5rem;
+    writing-mode: vertical-rl;
+    margin: 0;
+    padding-bottom: 0;
+    position: fixed;
+    inset-inline-end: 10px;
+    width: 90vw;
+    direction: ltr;
+    position: -webkit-sticky;
+}
+
+.container-tools p {
+    color: #191919;
+    font-size: 1rem;
+    /*margin-bottom: 10px;*/
+    padding: 0px;
+    text-align: start;
+    text-shadow: .5px #000;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    bottom: 0;
+}
+
+
+/* Mobile first queries */
+
+@media (min-width: 300px) {
+    p {
+        z-index: 9000;
+    }
+    .container-tools p {
+        /*color: rgba(0, 0, 0, 0);*/
+        z-index: -9000;
+    }
+    .container-tools a {
+        /* color: rgba(0, 0, 0, 0);*/
+        z-index: -9000;
+    }
+}
+
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {
+    p {
+        z-index: 9000;
+    }
+    .container-tools p {
+        /*color: rgba(0, 0, 0, 0);*/
+        z-index: -9000;
+    }
+    .container-tools a {
+        /*color: rgba(0, 0, 0, 0);*/
+        z-index: -9000;
+    }
+}
+
+
+/* Larger than phablet */
+
+@media (min-width: 550px) {}
+
+@media screen and (max-width: 600px) {
+    .container-tools {
+        visability: hidden;
+        clear: both;
+        float: left;
+        display: none;
+    }
+}
+
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+    .services {
+        width: 100%;
+        max-width: 100%;
+    }
+    .services .column {
+        margin: 0;
+    }
+}
+
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {
+    .footer {}
+    .cta {
+        position: fixed;
+        bottom: 0px;
+        text-align: center;
+    }
+}
+
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+    }
+}

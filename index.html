@@ -3,20 +3,31 @@
 
 <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MFPRZR5');</script>
-<!-- End Google Tag Manager -->
-    
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MFPRZR5');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <title>Stella Min, PhD | Personal Website and Portfolio</title>
     <!--style -->
     <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <!--Meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Personal website of Stella Min. ">
@@ -36,54 +47,71 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body>
-   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFPRZR5"
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFPRZR5"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
     <div id="particles-js">
         <div class="container">
             <div class="row top">
+                <!--start menu-->
+                <div id="menuArea">
+                    <input type="checkbox" id="menuToggle"></input>
+                    <label for="menuToggle" class="menuOpen">
+                    <div class="open"></div>
+                  </label>
+
+                    <div class="menu menuEffects">
+                        <label for="menuToggle"></label>
+                        <div class="menuContent">
+                            <ul>
+                                <li><a href="https://stellamin.com/blog">Blog</a></li>
+                                <li><a href="https://resources.stellamin.com">Resources</a></li>
+                                <!--<li><a href="#">Projects</a></li>
+                                <li><a href="https://stellamin.com/about">More</a>
+                                </li>-->
+                                <li><a target="_blank" href="http://eepurl.com/hoOniT">Subscribe</a>
+                                </li>
+                                <li>
+                                    <div class="social">
+                                        <div class="row">
+                                            <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/3iQFH6j"><i class="fab fa-twitter" aria-hidden="true" title="twitter"></i></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/2L00Y0U"><i class="ai ai-google-scholar-square" aria-hidden="true" title="google scholar"></i></a>
+                                            <!--<a target="_blank" rel="noopener noreferrer" href="https://istellar.medium.com/"><i class="fab fa-medium-m" aria-hidden="true" title="medium"></i></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/3adBe9O"><img src="/images/linktreeiconwht.png" style="color: #fff" width="25" height="25" /></a>-->
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <!--end menu-->
                 <div class="twelve column">
                     <div class="logo">
                         <a href="https://www.stellamin.com/"><img src="https://stellamin.com/images/doll_logo1.svg" style="width:100px;height:100px;"></a>
                     </div>
                     <h1>Hello!</h1>
-                    <h2>I'm Stella Min.</h2> 
+                    <h2>I'm Stella Min.</h2>
                     <p><b>Pronouns: She/Her/Hers</b></p>
                     <p>I'm a fierce and unapologetic advocate for diversity, equity, and inclusion.</p>
-                    <p>I graduated from the Sociology doctoral program at Florida State University, where I specialized in statistical methods and demography. Notable awards and achievements include fellowships from the National Science Foundation
-                        and National Institutes of Health. I earned my B.A. in economics and sociology from the University of Colorado Denver.
+                    <p>I graduated from the Sociology doctoral program at Florida State University, where I specialized in statistical methods and demography. Notable awards and achievements include fellowships from the National Science Foundation and National
+                        Institutes of Health. I earned my B.A. in economics and sociology from the University of Colorado Denver.
                     </p>
-                    <p>I have over 12 years of experience in consulting for small businesses across the country, in addition to 
-                        leveraging data and statistical models to provide actionable insights for Fortune 500 companies. My consulting career began when I became a solopreneur to help small business owners 
-                        transition to the digital economy by building customized websites and launching strategic advertising and marketing campaigns.
-                    </p> 
-                    <p>Together, my background and training enables me to successfully partner with business leaders from diverse industries to develop and implement 
-                        strategic data-driven initiatives to increase efficiency and grow their bottom line. 
+                    <p>I have over 12 years of experience in consulting for small businesses across the country, in addition to leveraging data and statistical models to provide actionable insights for Fortune 500 companies. My consulting career began when
+                        I became a solopreneur to help small business owners transition to the digital economy by building customized websites and launching strategic advertising and marketing campaigns.
+                    </p>
+                    <p>Together, my background and training enables me to successfully partner with business leaders from diverse industries to develop and implement strategic data-driven initiatives to increase efficiency and grow their bottom line.
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <!--social buttons-->
-                <div class="twelve column">
-                    <div class="social">
-                        <a target="_blank" rel="noopener noreferrer" href="mailto:stella.n.min@outlook.com"><i class="fas fa-envelope" aria-hidden="true" title="stella.n.min@outlook.com"></i></a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/3pqjLkW"><i class="fab fa-linkedin-in" aria-hidden="true" title="linkedin"></i></a>
-                        <!--<a target="_blank" rel="noopener noreferrer" href="https://github.com/istellar"><i class="fa fa-github-alt" aria-hidden="true" title="github"></i></a>-->
-                        <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/2L00Y0U"><i class="ai ai-google-scholar-square" aria-hidden="true" title="google scholar"></i></a>
-                        <!--<a target="_blank" rel="noopener noreferrer" href="https://codepen.io/istellar"><i class="fa fa-codepen" aria-hidden="true" title="codepen"></i></a>-->
-                        <!--<a target="_blank" rel="noopener noreferrer" href="https://www.shutterstock.com/g/Stella+Min"><i class="fa fa-camera" aria-hidden="true" title="shutterstock"></i></a>-->
-                        <!--<a target="_blank" rel="noopener noreferrer" href="https://istellar.medium.com/"><i class="fab fa-medium-m" aria-hidden="true" title="medium"></i></a>-->
-                        <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/3iQFH6j"><i class="fab fa-twitter" aria-hidden="true" title="twitter"></i></a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/2Mt3qgD"><i class="fas fa-bookmark" aria-hidden="true" title="resources"></i></a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/39oFpjL"><i class="fas fa-quote-right" aria-hidden="true" title="blog"></i></a>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 
-    <div calss="row">
+    <div class="row">
         <div class="container-tools">
             <p class="tools">Built with <a href="https://github.com/VincentGarreau/particles.js/">Particles.js</a> &amp; <a href="http://getskeleton.com/">Skeleton.css</a>
             </p>
@@ -106,17 +134,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/app.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154478804-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154478804-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-154478804-1');
-  gtag('set', {'user_id': 'USER_ID'}); // Set the user ID using signed-in user_id.
-    ga('set', 'userId', 'USER_ID'); // Set the user ID using signed-in user_id.
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154478804-1');
+        gtag('set', {
+            'user_id': 'USER_ID'
+        }); // Set the user ID using signed-in user_id.
+        ga('set', 'userId', 'USER_ID'); // Set the user ID using signed-in user_id.
+    </script>
 
 </body>
 

@@ -69,18 +69,19 @@ textarea {
 }
 
 span {
-	color: #F76C6C;
+    color: #F76C6C;
 }
 
-.logo a {
-    /*color: #F76C6C;*/
+
+/*.logo a {
+    color: #F76C6C;
 }
 
 .logo {
-    /*color: #F76C6C;*/
-	padding: 0;
-	margin: 0;
-}
+    color: #F76C6C;
+    padding: 0;
+    margin: 0;
+}*/
 
 .row.top p {
     color: #191919;
@@ -89,61 +90,190 @@ span {
     font-size: 1.7rem;
 }
 
+input {
+    display: none !important;
+}
+
+.open {
+    background-color: #f78888;
+    width: 35px;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    top: 8px;
+    z-index: 5;
+}
+
+.open:before {
+    content: "";
+    background-color: #f78888;
+    width: 35px;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+    position: relative;
+    top: -8px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+.open:after {
+    content: "";
+    background-color: #f78888;
+    width: 35px;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+    position: relative;
+    top: 4px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.menuOpen {
+    width: 24px;
+    height: 20px;
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+.menuOpen:hover .open:before {
+    top: -9px;
+}
+
+.menuOpen:hover .open:after {
+    top: 5px;
+}
+
+.menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #f78888;
+}
+
+.menu label {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.menu .menuContent {
+    position: relative;
+    top: 30%;
+    font-size: 54px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -170px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    z-index: 99998;
+}
+
+.menu ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-family: 'Playfair Display', serif;
+    padding: 10px 0;
+    z-index: 99998;
+}
+
+.menu ul li a:hover {
+    color: #f3d250;
+    z-index: 5;
+}
+
+.menuEffects {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    z-index: 3;
+}
+
+.menuEffects ul {
+    transform: translateY(0%);
+    transition: all 0.5s;
+    z-index: 3;
+}
+
+.social i {
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    z-index: 3;
+}
+
+
+/*.social img {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+}
+
+#mc_embed_signup {
+    background: #f78888 !important;
+    clear: left;
+    font-family: 14px 'Playfair Display', serif;
+    width: 60%;
+}*/
+
+#menuToggle:checked~.menuEffects {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+}
+
+#menuToggle:checked~.menuEffects ul {
+    opacity: 1;
+}
+
+#menuToggle:checked~.menuOpen .open {
+    background-color: transparent;
+}
+
+#menuToggle:checked~.menuOpen .open:before {
+    content: "";
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+
+#menuToggle:checked~.menuOpen .open:after {
+    content: "";
+    background-color: white;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+
+#menuToggle:not(:checked)~.menuEffects ul {
+    transform: translateY(-30%);
+}
+
 .contact {
     display: inline-block;
-}
-
-.social {}
-
-.social a {
-    position: relative;
-    text-align: justify;
-    margin-left: 0;
-    padding-right: 2.5rem;
-    font-size: 2.4rem;
-    color: #F76C6C;
-    z-index: 9999;
-}
-
-.social a:hover {
-    color: #F3D250;
-    font-size: 2.9rem;
-}
-
-.smallLogo {
-    /*color: #F76C6C;*/
-    font-size: 3.5rem;
-	padding: 0;
-	margin: 0;
-}
-
-.services h2 {
-    color: #F76C6C;
-    /*padding-bottom: 1.5rem;*/
-    font-size: 2rem;
-}
-
-.services .title {
-    color: #191919;
-    font-size: 3rem;
-}
-
-.u-full-width {
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.cta {
-    text-align: center;
-}
-
-.cta p {
-    color: #191919;
-    font-size: 2rem;
-    display: inline-block;
-    /*margin: 1.5rem;*/
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .footer {}

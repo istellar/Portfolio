@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Source+Sans+Pro:wght@300&display=swap');
 
 /*html{
   height:100%;
@@ -249,6 +249,10 @@ input {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.footer img {
+    position: relative;
+}
+
 .footerLinks {
     margin: 0px;
     padding: 0px;
@@ -359,6 +363,12 @@ input {
         /* color: rgba(0, 0, 0, 0);*/
         z-index: -9000;
     }
+    .smallLogo img {
+        margin-left: calc((94vw - 2px) / 2);
+    }
+    .footer p {
+        text-align: center;
+    }
 }
 
 
@@ -376,6 +386,15 @@ input {
         /*color: rgba(0, 0, 0, 0);*/
         z-index: -9000;
     }
+    .cta {
+        position: relative;
+    }
+    .smallLogo img {
+        margin-left: calc((96vw - 2px) / 2);
+    }
+    .footer p {
+        text-align: center;
+    }
 }
 
 
@@ -390,12 +409,21 @@ input {
         float: left;
         display: none;
     }
+    .cta {
+        position: relative;
+    }
+    .smallLogo img {
+        margin-left: calc((96vw - 2px) / 2);
+    }
+    .footer p {
+        text-align: center;
+    }
 }
 
 
 /* Larger than tablet */
 
-@media (min-width: 750px) {
+@media (min-width: 730px) {
     .services {
         width: 100%;
         max-width: 100%;
@@ -403,17 +431,38 @@ input {
     .services .column {
         margin: 0;
     }
+    .cta {
+        position: relative;
+    }
+    .tools {
+        visibility: hidden;
+    }
+    .smallLogo img {
+        margin-left: calc((96vw - 2px) / 2);
+    }
+    .footer p {
+        text-align: center;
+    }
 }
 
 
 /* Larger than desktop */
 
 @media (min-width: 1000px) {
-    .footer {}
+    p {
+        margin-right: 70px;
+    }
     .cta {
-        position: fixed;
+        /*position: fixed;*/
         bottom: 0px;
         text-align: center;
+        position: relative;
+    }
+    .tools {
+        visibility: hidden;
+    }
+    .smallLogo img {
+        margin-left: calc((3vw - 1px) / 2);
     }
 }
 

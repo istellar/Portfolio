@@ -29,13 +29,6 @@ span {
     color: #F76C6C;
 }
 
-.row.top p {
-    color: #191919;
-    margin-top: 1rem;
-    text-align: justify;
-    font-size: 1.7rem;
-}
-
 input {
     display: none !important;
 }
@@ -213,18 +206,20 @@ input {
     padding-bottom: 50px;
 }
 
-.container p {
-    text-align: center;
-    color: #191919;
-    text-shadow: .5px #000;
-    z-index: -1;
-}
-
 .thanks {
     margin-top: 20%;
     margin-bottom: 5px;
     text-align: center;
     font-size: 5rem;
+    z-index: -1;
+}
+
+.text #text {
+    margin-left: calc((12vw - 2px) / 2);
+    position: relative;
+    text-align: center;
+    color: #191919;
+    text-shadow: .5px #000;
     z-index: -1;
 }
 
@@ -375,6 +370,9 @@ input {
 /* Larger than mobile */
 
 @media (min-width: 400px) {
+    .text #text {
+        margin-left: calc((6vw - 2px) / 2);
+    }
     p {
         z-index: 9000;
     }
@@ -400,9 +398,16 @@ input {
 
 /* Larger than phablet */
 
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+    .text #text {
+        margin-left: calc((6vw - 2px) / 2);
+    }
+}
 
 @media screen and (max-width: 600px) {
+    .text #text {
+        margin-left: calc((8vw - 2px) / 2);
+    }
     .container-tools {
         visability: hidden;
         clear: both;
@@ -449,6 +454,9 @@ input {
 /* Larger than desktop */
 
 @media (min-width: 1000px) {
+    .text #text {
+        margin-left: calc((12vw - 2px) / 2);
+    }
     p {
         margin-right: 70px;
     }
